@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>product Details Page</title>
+        <link rel="stylesheet" href="d1.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">E BUY</div>
+            <div class="pname">Men Shirts</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fas fa-shopping-cart"></i>
+            </ul>
+        </nav>
+
+
+        <div class="flex-box">
+          <div class="left"></div>
+          <div class="big-img">
+            <img src="shirt 1.png" onclick="showImg(this.src)">
+          </div>
+            <div class="rating">
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            
+            <div class="price"> Price: Rs399
+            <p>Size: </p>
+            <div class="size"></div>
+              <div class="psize active">M</div>
+              <div class="psize">L</div>
+              <div class="psize">XL</div>
+              <div class="psize">XXL</div>
+          </div>
+          <div class="quantity">
+            <p>Quantity: </p>
+            <input type="number" min="1" max="5" value="1">
+          </div>
+          <div class="btn-box">
+            <button class="cart-btn">Add to Cart</button>
+            <button class="buy-btn"onclick="window.location.href='t1.html'">Buy Now</button>
+          </div>
+
+            
+          </div>
+          </div>
+        </div>
+
+        <script>
+          let bigImg = document.querySelector('.big-img img');
+          function showImg(pic){
+            bigImg.src = pic;
+          }
+        </script>
+    </body>
+</html>
